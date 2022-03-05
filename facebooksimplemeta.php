@@ -31,8 +31,14 @@ class plgsystemfacebooksimplemeta extends JPlugin {
 
 	function onBeforeCompileHead() {
 		$limit = $this->params->def('limitw');
-		$sitename = $this->params->def('sitename');
 		$locale = $this->params->def('locale');
+		
+			    
+		$config = JFactory::getConfig();
+                 $sitename = $config->get( 'sitename' );
+			 
+		    
+		    
 		
 		if($limit<1) 
 		    $limit = 247;
@@ -53,10 +59,8 @@ class plgsystemfacebooksimplemeta extends JPlugin {
 		    $narekovaji = array('"', "'");
 		    $title = str_replace($narekovaji, '', $item->title);
 		    
-		
-			 
-		    
-		    
+		   
+	
 		    if(isset($item->title))
 			  $document->addCustomTag( "<meta property='og:title' content='". $title ."'>" );
 			 
