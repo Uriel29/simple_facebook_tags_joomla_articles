@@ -35,12 +35,11 @@
       <fieldset name="basic">
           <field name="limitw" type="text" label="Limit chars in description: " description="Limit characters in description, default is 250."/>
       </fieldset>
-            <fieldset name="basic">
-          <field name="sitename" type="text" label="Site name: " description="."/>
-      </fieldset>
+      
+       
       
           <fieldset name="basic">
-          <field name="locale" type="text" label="Locale: " description="Lacale."/>
+          <field name="locale" type="text" label="Locale: " description="Locale."/>
       </fieldset> 
       
       
