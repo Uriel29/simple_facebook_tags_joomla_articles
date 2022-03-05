@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * @copyright	Copyright (c) 2022 facebooksimplemeta. All rights reserved.
+ * @license		http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ */
+-->
+<extension type="plugin" version="3.0" group="system" method="upgrade">
+	<name>Facebook simple meta - Uriel Dos Santos Souza</name>
+	<author>Uriel Dos Santos Souza</author>
+	<creationDate>March 2022</creationDate>
+	<copyright>Copyright (c) 2022 facebook simple meta. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail></authorEmail>
+	<authorUrl>https://github.com/Uriel29</authorUrl>
+	<version>1.0.0</version>
+	<description>
+	<![CDATA[
+		Simple facebook meta for Joomla articles
+	]]>
+	</description>
+
+	<files>
+		<filename plugin="facebooksimplemeta">facebooksimplemeta.php</filename>
+		<filename>index.html</filename>
+	</files>
+
+	<languages>
+		<language tag="en-GB">en-GB.plg_system_facebooksimplemeta.ini</language>
+		<language tag="en-GB">en-GB.plg_system_facebooksimplemeta.sys.ini</language>
+	</languages>
+
+	 <config>
+     <fields name="params">
+      <fieldset name="basic">
+          <field name="limitw" type="text" label="Limit chars in description: " description="Limit characters in description, default is 250."/>
+      </fieldset>
+            <fieldset name="basic">
+          <field name="sitename" type="text" label="Site name: " description="."/>
+      </fieldset>
+      
+          <fieldset name="basic">
+          <field name="locale" type="text" label="Locale: " description="Lacale."/>
+      </fieldset> 
+      
+      
+     </fields>
+    </config>
+</extension>
